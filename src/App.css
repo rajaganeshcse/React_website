@@ -1,38 +1,273 @@
-.App {
+/* App.css - Portfolio Website Styles */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #111;
+  color: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+}
+
+body.dark .navbar {
+  background: rgba(17, 17, 17, 0.9);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #0077ff;
+}
+
+.toggle-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #0077ff;
+  background: none;
+  color: #0077ff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.toggle-btn:hover {
+  background: #0077ff;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 8rem 1rem 4rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero h1 span {
+  color: #0077ff;
+}
+
+.hero p {
+  max-width: 600px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #0077ff;
+  color: #fff;
+}
+
+.btn-secondary {
+  border: 2px solid #0077ff;
+  color: #0077ff;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  transform: scale(1.05);
+}
+
+/* Projects Section */
+.projects {
+  padding: 5rem 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.project-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body.dark .project-card {
+  background: #1a1a1a;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+  color: #0077ff;
+}
+
+.project-card p {
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.btn-link {
+  color: #0077ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Skills Section */
+.skills {
+  background: #f3f6fb;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+body.dark .skills {
+  background: #111;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skill-item {
+  padding: 1rem;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+body.dark .skill-item {
+  background: #1a1a1a;
+}
+
+/* About Section */
+.about {
+  padding: 5rem 1rem;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.about p {
+  line-height: 1.7;
+  color: #555;
+}
+
+body.dark .about p {
+  color: #ccc;
+}
+
+/* Contact Section */
+.contact {
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 2rem auto;
 }
 
-.App-link {
-  color: #61dafb;
+input, textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+button[type="submit"] {
+  padding: 0.75rem 1.5rem;
+  background: #0077ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background: #f3f6fb;
+  color: #555;
+}
+
+body.dark .footer {
+  background: #111;
+  color: #aaa;
 }
