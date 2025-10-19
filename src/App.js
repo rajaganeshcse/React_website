@@ -19,7 +19,8 @@ function Navbar({ onAdminClick }) {
       <a href="#projects">Projects</a>
       <a href="#blogs">Blogs</a>
       <a href="#contact">Contact</a>
-      <button className="btn-admin" onClick={onAdminClick}>Admin</button>
+
+
     </div>
   </div>
 </nav>
@@ -31,7 +32,7 @@ function Hero() {
   return (
     <section id="home" className="hero">
       <h1>Hi, I'm <span>RajaGanesh</span></h1>
-      <p>I’m a Front-End Developer creating modern, fast, and responsive web applications using React.</p>
+      <p>Hi, I'm  passionate web developer with a strong interest in creating modern, responsive, and user-friendly websites. I enjoy turning ideas into interactive digital experiences using technologies like HTML, JavaScript,React, CSS and Java. I’m always eager to learn new tools, improve my coding skills, and take on creative challenges that push the boundaries of design and functionality.</p>
     </section>
   );
 }
@@ -50,6 +51,11 @@ function Resume() {
     <section id="resume" className="resume">
       <h2>Resume</h2>
       <p>Download my resume here or view it online.</p>
+      <div class="button">
+  <a href="#" class="anchor">
+    <span>Download Resume </span>
+  </a>
+</div>
     </section>
   );
 }
@@ -150,3 +156,4 @@ export default function App() {
     </div>
   );
 }
+

@@ -1,11 +1,56 @@
 /* === Global === */
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: #f9fafb;
+   font-family: 'Inter', sans-serif;
+  background: #c9cdd2;
   color: #1f2937;
   scroll-behavior: smooth;
+  
 }
+.anchor {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: 600;
+  border-radius: 50px;
+  border: 2px solid #ed553b;
+  padding: 14px 40px 13px;
+  overflow: hidden;
+  position: relative;
+}
+
+.anchor:hover {
+  color: #4e484a;
+  
+}
+.anchor:checked {
+  color: #00aa2b;
+  
+}
+
+.button a::before {
+  position: absolute;
+  content: "";
+  z-index: 0;
+  background-color: #ed553b;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  height: 111%;
+  transition: all .3s ease;
+}
+
+.button a:hover::before {
+  height: 11%;
+}
+
+.button span {
+  position: relative;
+  z-index: 2;
+  transition: all .3s ease;
+}
+
 
 a { text-decoration: none; color: inherit; }
 h1,h2,h3 { margin: 0; }
@@ -14,7 +59,7 @@ h1,h2,h3 { margin: 0; }
 .navbar {
   display: flex;
   justify-content: center;
-  background: #fff;
+  background: #a9b715;
   padding: 1rem 2rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   position: sticky;
@@ -32,7 +77,7 @@ h1,h2,h3 { margin: 0; }
 }
 
 .navbar-left {
-  display: flex;
+  display:flex;
   align-items: center;
   gap: 0.8rem;
 }
@@ -40,18 +85,33 @@ h1,h2,h3 { margin: 0; }
 .navbar-right {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
+  font-size: medium;
+  font-weight: bold;
 }
 
 /* Links styling */
 .navbar-right a {
-  font-weight: 500;
+  font-weight: 800;
   font-size: 16px;
-  color: #1f2937;
-  transition: color 0.3s;
+  color:black;
+  transition: color 0.4s;
 }
 
-.navbar-right a:hover { color: #4f46e5; }
+.navbar-right a:hover {
+   color: #ff0368;
+   font-size: 18px; 
+   font-weight: 1000;
+   text-shadow:#0c29e5 5px 5px 5px;
+   cursor: pointer;
+  
+  }
+  .navbar-right a:active {
+   color: #1d04f6;
+   font-size: 18px; 
+   text-shadow:#5b396a 5px 5px 5px;
+  
+  }
 
 /* Admin button */
 .btn-admin {
@@ -77,8 +137,13 @@ h1,h2,h3 { margin: 0; }
 /* === Hero === */
 .hero {
   text-align: center;
+  width: 100%;
   padding: 6rem 2rem;
-  background: linear-gradient(135deg, #eef2ff, #f9fafb);
+  padding-right: 99%;
+  margin-top: 45px;
+  margin-left: 1%;
+  margin-right: 1%;
+  background: linear-gradient(135deg, #ebdbe3, #7eb7f0);
 }
 
 .hero span { color: #4f46e5; }
@@ -223,3 +288,4 @@ input, textarea {
   height: 28px;
   cursor: pointer;
 }
+/* === Global === */
