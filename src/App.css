@@ -289,3 +289,120 @@ input, textarea {
   cursor: pointer;
 }
 /* === Global === */
+/* 🌐 Mobile Responsive Design */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar-left {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar-right a {
+    display: block;
+    font-size: 16px;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  /* About */
+  .about {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  /* Resume */
+  .resume {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .resume .button .anchor span {
+    font-size: 14px;
+  }
+
+  /* Projects */
+  .projects .project-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .projects .project-card {
+    width: 90%;
+    text-align: center;
+  }
+
+  /* Blogs */
+  .blogs {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .blogs ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .blogs li {
+    margin: 10px 0;
+  }
+
+  /* Contact */
+  .contact {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .contact p {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+
+  /* Footer */
+  .footer {
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Login Page */
+  .login-page {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .login-page input {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+}
