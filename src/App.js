@@ -27,7 +27,6 @@ function Navbar({ onAdminClick }) {
 
   );
 }
-
 function Hero() {
   return (
     <section id="home" className="hero">
@@ -67,7 +66,7 @@ function Projects() {
   ];
 
   return (
-    <section id="projects" className="projects">
+    <section id="projects " className="projects">
       <h2>Projects</h2>
       <div className="project-list">
         {data.map((p, i) => (
@@ -76,6 +75,7 @@ function Projects() {
             <p>{p.desc}</p>
             <a href={p.link} className="btn-link">View</a>
           </div>
+          
         ))}
       </div>
     </section>
@@ -105,7 +105,7 @@ function Contact() {
     <section id="contact" className="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:ganesh209832@gmail.com">ganesh209832@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/rajaGanesh">rajaGanesh</a></p>
+      <p>GitHub: <a href="https://github.com/rajaganeshcse">rajaganeshcse</a></p>
       <p>LinkedIn: <a href="https://linkedin.com/in/rajaGanesh">RajaGanesh</a></p>
     </section>
   );
@@ -143,7 +143,7 @@ export default function App() {
   const [showLogin, setShowLogin] = useState(false);
 
   return (
-    <div className="App">
+    <div className="container1">
       <Navbar onAdminClick={() => setShowLogin(true)} />
       {showLogin && <AdminLogin onClose={() => setShowLogin(false)} />}
       <Hero />
