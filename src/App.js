@@ -86,8 +86,8 @@ function Resume() {
 
 function Projects() {
   const data = [
-    { title: "Portfolio Website", desc: "Built with React", link: "#" },
-    { title: "E-commerce App", desc: "React + Node.js", link: "#" },
+    { title: "HeartDiease Prediction", desc: "Machine Learning Binary classification use to predict the future", link: "#" },
+    { title: "IOT Smart HealthCare ", desc: "IOT Ardunio use to detect the Patient Health Details like 📉 Pulse , 🩸 Spo2, 🌡️ Temperature", link: "#" },
   ];
 
   return (
