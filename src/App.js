@@ -64,14 +64,12 @@ function Hero() {
 function About() {
   return (
     <section id="about" className="about">
-
       <h2>About Me</h2>
 
       <p>
         I am passionate about building Android apps, React websites and IoT
         systems that solve real-world problems.
       </p>
-
     </section>
   );
 }
@@ -84,7 +82,7 @@ function Resume() {
 
       <h2>Resume</h2>
 
-      <a href="src/pdf/resume.pdf" download className="resume-btn">
+      <a href="/resume.pdf" download className="resume-btn">
         <img src={downloadIcon} alt="download" className="btn-icon" />
         Download Resume
       </a>
@@ -144,8 +142,27 @@ function Blogs() {
       <h2>Blogs</h2>
 
       <ul>
-        <li><a href="#">React Tips</a></li>
-        <li><a href="#">Android Development</a></li>
+
+        <li>
+          <a
+            href="https://react.dev"
+            target="_blank"
+            rel="noreferrer"
+          >
+            React Tips
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://developer.android.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Android Development
+          </a>
+        </li>
+
       </ul>
 
     </section>
@@ -285,7 +302,6 @@ export default function App() {
       id: 1,
       title: "Heart Disease Prediction",
       desc: "Machine learning system to predict heart disease.",
-      src: "https://www.linkedin.com/pulse/revolutionizing-healthcare-mobile-apps-benefits-features",
       image: heartdieaseimage
     },
     {
