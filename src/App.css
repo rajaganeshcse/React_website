@@ -352,3 +352,89 @@ a {
     grid-template-columns: 1fr;
   }
 }
+.project-details{
+padding:40px;
+max-width:900px;
+margin:auto;
+}
+
+.gallery{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.gallery img{
+width:250px;
+border-radius:10px;
+}
+
+.tech-list{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.tech-list li{
+background:#eee;
+padding:5px 10px;
+border-radius:5px;
+}
+
+.project-buttons{
+margin-top:20px;
+display:flex;
+gap:20px;
+}
+
+.btn{
+background:#007bff;
+color:white;
+padding:10px 20px;
+text-decoration:none;
+border-radius:6px;
+}
+
+.back-btn{
+display:block;
+margin-top:30px;
+color:#333;
+}
+.projects{
+padding:60px 20px;
+}
+
+.project-scroll{
+display:flex;
+gap:20px;
+overflow-x:auto;
+padding-bottom:10px;
+}
+
+.project-card{
+min-width:280px;
+background:white;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+overflow:hidden;
+}
+
+.project-img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.project-content{
+padding:15px;
+}
+
+.btn-link{
+display:inline-block;
+background:#007bff;
+color:white;
+padding:6px 12px;
+border-radius:6px;
+text-decoration:none;
+}
